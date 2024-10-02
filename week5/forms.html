@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Example</title>
+    </head>
+    <body>
+        <h4>Forms Example</h4>
+        <form action="" method="post">
+            <!-- form elements go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <br>
+
+            <label for="telephone">Telephone:</label>
+            <input type="telephone" id="telephone">
+
+
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+
+
+            <input type="checkbox" id="cpan134">
+            <label for="cpan134">CPAN134</label>
+
+            <input type="checkbox" id="cpan133">
+            <label for="cpan133">CPAN133</label>
+
+            <input type="checkbox" id="cpan132">
+            <label for="cpan132">CPAN132</label>
+            <br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+            <br>
+
+            <label for="favcolor">Favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>
