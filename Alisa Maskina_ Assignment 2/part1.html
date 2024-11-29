@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 2 - Part 1</title>
+    </head>
+    <body>
+        <script>
+            function calculateArea(width, height) {
+
+                while (isNaN(width) || width <= 0 || isNaN(height) || height <= 0) {
+                    console.log("Please enter positive numbers for width and height.");
+                    width = parseFloat(prompt("Enter a positive width value: "));
+                    height = parseFloat(prompt("Enter a positive height value: "));
+                }
+
+                let area = width * height;
+                console.log(`The area of your rectangle is: ${area}`);
+            }
+            calculateArea(5, 3);
+        </script>
+    </body>
+</html>

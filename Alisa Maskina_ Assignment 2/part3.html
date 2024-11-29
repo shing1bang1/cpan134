@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 2 - Part 3</title>
+    <style>
+        ul li {
+            font-size: 18px;
+            width: 20%;
+            line-height: 200%;
+            background-color: lightblue;
+            margin: 10px 0;
+            padding: 0 20px;
+            border: 1px solid black;;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h2 style="margin-top: 5%;">Manipulating the DOM</h2>
+    <ul id="list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    
+    <script>
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()';
+        function generateString() {
+            let text = '';
+            for (let i = 0; i < (Math.floor(Math.random()*17 + 1)); i++) {
+                text += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return text;
+        };
+        document.addEventListener('DOMContentLoaded', () => {
+            var ul = document.getElementById('list');
+            let newitem = document.createElement('li');
+            newitem.textContent = "Fourth item";
+            ul.appendChild(newitem);
+
+            ul.addEventListener('click', function(event) {
+                if (event.target.tagName === 'LI') {
+                    event.target.textContent = generateString();
+                }
+        });
+        });
+        
+    </script>
+</body>
+</html>

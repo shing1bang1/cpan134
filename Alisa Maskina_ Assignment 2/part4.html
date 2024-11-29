@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 2 - Part 4</title>
+    <style>
+        #boxModel {
+            width: 500px;
+            height: 200px;
+            line-height: 200px;
+            padding: 20px;
+            border: 3px dashed green;
+            margin: 10% auto;
+            background-color: lightgoldenrodyellow;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h2 style="margin-top: 5%;">CSS Box Model</h2>
+    <div id="boxModel">Click or hover the box</div>
+
+    <script>
+        var box = document.getElementById('boxModel');
+
+        box.addEventListener('click', () => {
+            if (box.style.backgroundColor === 'lightgoldenrodyellow') {
+                box.style.backgroundColor = 'black';
+                box.style.color = 'lightgoldenrodyellow';
+            } else {
+                box.style.color = 'black';
+                box.style.backgroundColor = 'lightgoldenrodyellow';
+            }
+            
+        });
+
+
+        box.addEventListener('mouseover', () => {
+            box.style.borderColor = 'magenta';
+            box.style.fontSize = '32px';
+        });
+
+        box.addEventListener('mouseout', () => {
+            box.style.borderColor = 'green'; 
+            box.style.fontSize = '18px';
+        });
+
+
+    </script>
+</body>
+</html>
