@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: "Parkinsans", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d0d0d;
+    text-align: center;
+    color: #9a1829;
+    padding: 20px 0;
+}
+
+header nav {
+    margin-bottom: 20px;
+    background-color: #0d0d0d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav a {
+    line-height: 50px;
+    color: #9a1829;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffe4e1;
+}
+
+header h1 {
+    font-size: 40px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    margin-top: 50px;
+}
+
+/* Main Styles */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #9a1829;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Projects List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #9a1829;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul li div a {
+    line-height: 10px;
+    font-weight: bold;
+    color: #9a1829;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li div a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+
+ul li div p {
+
+    text-align: justify;
+    font-size: 0.9em;
+    color: #555;
+    margin: 30px 0 0 0 ;
+}
+
+ul li img {
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid #9a1829;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #9a1829;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

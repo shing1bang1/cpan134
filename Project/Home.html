@@ -2,41 +2,74 @@
 <html>
     <head>
         <title>Portfolio-Home Page</title>
+        <link rel="stylesheet" href="homeStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
     </head>
     <body>
+        <div class="beginning">
+            <h2 id="greeting"></h2>
+        </div>
         <header>
-            <h1>Alisa Maskina</h1>
-            <p>18 years, Russian</p>
-            <img src="img/img1.jpg" style="height: 200px;">
+            <div>
+                <h1>ALISA MASKINA</h1>
+                <p>18 years, Russian</p>
+                <img src="img/img1.jpg">
+            </div>
         </header>
         <main>
             <nav>
+                <a href="About.html">
+                    <div>
+                        About
+                        <p>Some fact about background, experience, values.</p>
+                    </div>
+                </a>
+                <a href="Projects.html">
                 <div>
-                    <a href="About.html">About</a>
-                    <p>Some fact about background, experience, values.</p>
-                </div>
-                <div>
-                    <a href="Projects.html">Projects</a>
+                    Projects
                     <p>Projects gallery with details.</p>
                     
                 </div>
-                <div>
-                    <a href="Resume.html">Resume</a>
-                    <p>Resume, education and skills.</p>
-                </div>
-                <div>
-                    <a href="Achievements.html">Achievements</a>
-                    <p>Awards and victories.</p>
-                </div>
-                <div>
-                    <a href="Contact.html">Contact</a>
-                    <p>Contact form and social links.</p>
-                </div>
+                </a>
+                <a href="Resume.html">
+                    <div>
+                        Resume
+                        <p>Resume, education and skills.</p>
+                    </div>
+                </a>
+                <a href="Achievements.html">
+                    <div>
+                        Achievements
+                        <p>Awards and victories.</p>
+                    </div>
+                </a>
+                <a href="Contact.html">
+                    <div>
+                        Contact
+                        <p>Contact form and social links.</p>
+                    </div>
+                </a>
                 
             </nav>
         </main>
         <footer>
             <p>&copy; 2024 Alisa Maskina.</p>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const greeting = document.getElementById("greeting");
+                const hour = new Date().getHours();
+                if (hour < 12) {
+                    greeting.textContent = "Good Morning!";
+                } else if (hour < 18) {
+                    greeting.textContent = "Good Afternoon!";
+                } else {
+                    greeting.textContent = "Good Evening!";
+                }
+            });
+        </script>
     </body>
 </html>

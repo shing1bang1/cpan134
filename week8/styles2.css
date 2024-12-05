@@ -1,0 +1,76 @@
+/* Style the header */
+header {
+
+    text-align: center;
+  
+    background-color: #f8f9fa;
+  
+    padding: 10px;
+  
+  }
+  
+  
+  
+  /* Style the footer */
+  
+  footer {
+  
+    text-align: center;
+  
+    background-color: #f1f1f1;
+  
+    padding: 10px;
+  
+    font-size: 0.9em;
+  
+    clear: both;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Multi-column layout using floats */
+  
+  .column {
+  
+    width: 30%; /* Set column width */
+  
+    float: left; /* Float each column to the left */
+  
+    margin: 10px 1.5%; /* Margin between columns */
+  
+    background-color: #e9ecef;
+  
+    padding: 20px;
+  
+    border: 2px solid #ced4da;
+  
+    border-radius: 5px;
+  
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adding shadow for depth */
+  
+  
+  
+  }
+  
+  
+  
+  /* Clearfix to ensure main container wraps floated columns */
+  
+  .clearfix::after {
+  
+    content: "";
+  
+    display: table;
+  
+    clear: both;
+  
+  }
+  
+  
