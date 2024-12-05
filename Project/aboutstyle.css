@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: "Parkinsans", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d0d0d;
+    text-align: center;
+    color: #9a1829;
+    padding: 20px 0;
+}
+
+header nav {
+    margin-bottom: 20px;
+    background-color: #0d0d0d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav a {
+    line-height: 50px;
+    color: #9a1829;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffe4e1;
+}
+
+header h1 {
+    font-size: 40px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    margin-top: 50px;
+}
+
+/* Main Styles */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 2px solid #9a1829;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #9a1829;
+}
+
+p {
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #0d0d0d;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+footer p {
+    color: #9a1829;
+}

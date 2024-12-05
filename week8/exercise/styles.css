@@ -1,0 +1,65 @@
+/* Style for the main container */
+
+main {
+
+    padding: 10px;
+  
+  }
+  
+  
+  
+  /* Style for intro text */
+  
+  .intro-text {
+  
+    float: left;
+  
+    width: 45%;
+  
+    padding: 10px;
+  
+    background-color: #f0f8ff;
+  
+    border: 1px solid #ddd;
+
+    font-size: 24px;
+    
+    text-align: justify;
+  
+  }
+  
+  
+  
+  /* Style for intro image */
+  
+  .intro-image {
+  
+    float: left;
+  
+    width: 45%;
+  
+    padding: 10px;
+  
+    margin-left: 5%;
+  
+    background-color: #e6f7ff;
+  
+    border: 1px solid #ddd;
+  
+  }
+  
+  
+  
+  /* Clearfix to contain floated sections */
+  
+  .clearfix::after {
+  
+    content: "";
+  
+    display: table;
+  
+    clear: both;
+  
+  }
+  
+  

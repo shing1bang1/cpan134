@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>Projects</title>
+    <link rel="stylesheet" href="projectsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -18,30 +23,54 @@
     <main>
         <section>
             <h2>Projects Gallery</h2>
+            <label for="filter">Filter by Category:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="JavaScript, HTML">JavaScript, HTML</option>
+                <option value="Python">Python</option>
+                <option value="Other">Other</option>
+            </select>
             <ul>
-                <li>
-                    <a href="https://github.com/shing1bang1/Projects/tree/main/Powerball%20JavaScript" target="_blank">Powerball Lottery JavaScript</a>
-                    <p>This application simulates the process of playing the Powerball Lottery.
-                        It allows to feel the thrill of the lottery without spending money. Thus, anyone can test their luck without any risk.
-                        The main goal of it is to show how almost impossible it is to win the Powerball Lottery
-                        and let people play it without wasting money and without risking their lives (without risk to be left with nothing).
-                        So, it solves the problem of spending too much money on lotteries.
-                    </p>
-                    <img src="img/powerballjs.png" alt="Powerball JS" style="height: 100px;"> 
-                </li>
-                <li>
-                    <a href="https://github.com/shing1bang1/Projects/blob/main/project%20UAV.pdf" target="_blank">Wildlife Animal Monitoring Drone (overview)</a>
-                    <p>My group selected a UAV suitable for the purpose, studied its characteristics, calculated the final cost
-                        (taking into account the replacement of some parts and the addition of new ones).
-                        Thus, we created a UAV model that is most suitable for monitoring animals in the wild to reduce the risk of threat and assist the security system.
-                    </p>
-                    <img src="img/uav.png" alt="UAV" style="height: 100px;"> 
-                    </li>
+                <li class="project-item" data-category="JavaScript, HTML">
+                    <div>
+                        <a href="https://github.com/shing1bang1/Projects/tree/main/Powerball%20JavaScript" target="_blank">Powerball Lottery JavaScript</a>
+                        <p>This application simulates the process of playing the Powerball Lottery.
+                                It allows to feel the thrill of the lottery without spending money. Thus, anyone can test their luck without any risk.
+                                The main goal of it is to show how almost impossible it is to win the Powerball Lottery
+                                and let people play it without wasting money and without risking their lives (without risk to be left with nothing).
+                                So, it solves the problem of spending too much money on lotteries.
+                        </p>
+                    </div>
+                    <img src="img/powerballjs.png" alt="Powerball JS">
 
-                <li>
-                    <a href="https://github.com/shing1bang1/Projects/tree/main/Powerball%20Python" target="_blank">Powerball Lottery Python</a>
-                    <p>This is a project to create flowcharts, describe and edit existing Powerball Lottery code.</p>
-                    <img src="img/powerballp.png" alt="UAV" style="height: 100px;"> 
+                </li>
+                
+                <li class="project-item" data-category="JavaScript, HTML">
+                    <div>
+                        <a href="https://github.com/shing1bang1/Projects/tree/main/Digital%20Wallet" target="_blank">Digital Wallet Application</a>
+                        <p>An application (web-based) designed to help users manage their finances efficiently. The app allows users to track income 
+                            and expenses, view currency exchange rates, and manage a list of recent transactions. </p>
+                    </div>
+                    <img src="img/walletjs.png" alt="DigitalWallet"> 
+                </li>
+
+                <li class="project-item" data-category="Python">
+                    <div>
+                        <a href="https://github.com/shing1bang1/Projects/tree/main/Powerball%20Python" target="_blank">Powerball Lottery Python</a>
+                        <p>This was a project to create flowcharts, describe and edit the existing Powerball Lottery code.</p>
+                    </div>
+                    <img src="img/powerballp.png" alt="PowerballPython"> 
+                </li>
+                
+                <li class="project-item" data-category="Other">
+                    <div>
+                        <a href="https://github.com/shing1bang1/Projects/blob/main/project%20UAV.pdf" target="_blank">Wildlife Animal Monitoring Drone (overview)</a>
+                        <p>My group selected a UAV suitable for the purpose, studied its characteristics, calculated the final cost
+                            (taking into account the replacement of some parts and the addition of new ones).
+                            Thus, we created a UAV model that is most suitable for monitoring animals in the wild to reduce the risk of threat and assist the security system.
+                        </p>
+                    </div>
+                    <img src="img/uav.png" alt="UAV"> 
                 </li>
             </ul>
         </section>
@@ -50,5 +79,23 @@
     <footer>
         <p>&copy; 2024 Alisa Maskina.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const projects = document.querySelectorAll(".project-item");
+    const filterSelect = document.getElementById("filter");
+
+    filterSelect.addEventListener("change", function () {
+        const category = this.value;
+        projects.forEach((project) => {
+            if (category === "all" || project.dataset.category === category) {
+                project.style.display = "grid";
+            } else {
+                project.style.display = "none";
+            }
+        });
+    });
+});
+    </script>
 </body>
 </html>

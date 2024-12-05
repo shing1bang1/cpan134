@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Contact</title>
+        <link rel="stylesheet" href="contactStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>           
@@ -13,45 +18,53 @@
                 <a href="Achievements.html">Achievements</a>
                 <a href="Contact.html">Contact</a>               
             </nav>
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
         </header>
 
         <main>
             <section>
                 <fieldset>
                     <legend>Contact Form</legend>
-                    <form action="/submit" method="POST">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="439979a3-5789-42ec-add5-6e66be877adb">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br><br>
+                        <input type="text" id="name" name="name"><br><br>
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="email" id="email" name="email"><br><br>
 
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                        <label for="fileField">Choose a file to upload:</label>
+                        <input type="file" name="uploadingFile" id="fileField">
 
                         <button type="submit">Submit</button>
+
+                        <div id="result"></div>
                     </form>
             </fieldset>
             </section>
 
             <section>
                 <h2>Me on Social Media</h2>
-
-                <a href="https://www.instagram.com/111_abvgd/" target="_blank">
-                    <img src="img/inst.png" alt="Instagram" style="height: 50px;">
-                </a>  
-                <a href="https://github.com/shing1bang1" target="_blank">
-                    <img src="img/git.png" alt="GitHub" style="height: 50px;">
-                </a>
-                <a href="https://t.me/shingbang" target="_blank">
-                    <img src="img/telegram.png" alt="Telegram" style="height: 50px;">
-                </a>
+                <div>
+                    <a href="https://www.instagram.com/111_abvgd/" target="_blank">
+                        <img src="img/inst.png" alt="Instagram" style="height: 50px;">
+                    </a>  
+                    <a href="https://github.com/shing1bang1" target="_blank">
+                        <img src="img/git.png" alt="GitHub" style="height: 50px;">
+                    </a>
+                    <a href="https://t.me/shingbang" target="_blank">
+                        <img src="img/telegram.png" alt="Telegram" style="height: 50px;">
+                    </a>
+                </div>
             </section>
         </main>
 
         <footer>
             <p>&copy; 2024 Alisa Maskina.</p>
         </footer>
+        <script src="contactScript.js"></script>
     </body>
 </html>

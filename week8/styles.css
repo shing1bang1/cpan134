@@ -1,0 +1,33 @@
+/* Style the header */
+header {
+    text-align: center;
+    background-color:#f8f9fa;
+    padding: 10px;
+}
+
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+/* Multy-column layout */
+main {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+.column { 
+    flex: 1;    /* equal width for each column*/
+    background-color: #e9ecef;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
